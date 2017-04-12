@@ -9,8 +9,7 @@ import { TutorialPage } from '../tutorial/tutorial';
 })
 export class SignupPage {
 
-    account: {name: string, email: string, password: string} = {
-    name: 'Test Human',
+    account: {email: string, password: string} = {
     email: 'test@example.com',
     password: 'test'
   };

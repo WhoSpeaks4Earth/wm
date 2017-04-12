@@ -8,6 +8,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { SignupPage } from '../pages/signup/signup';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
+import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -38,6 +39,7 @@ let pages = [
   SignupPage,
   TabsPage,
   HomePage,
+  ProfilePage,
   AboutPage,
   ContactPage
 ];

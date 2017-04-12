@@ -1,7 +1,7 @@
 import { TabsPage } from './tabs/tabs';
 import { WelcomePage } from './welcome/welcome';
 import { AboutPage } from './about/about';
-import { ContactPage } from './contact/contact';
+import { ProfilePage } from './profile/profile';
 import { HomePage } from './home/home';
 
 // The page the user lands on after opening the app and without a session
@@ -14,4 +14,4 @@ export const MainPage = TabsPage;
 // The initial root pages for our tabs (remove if not using tabs)
 export const Tab1Root = HomePage;
 export const Tab2Root = AboutPage;
-export const Tab3Root = ContactPage;
+export const Tab3Root = ProfilePage;

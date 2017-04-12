@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      <ion-icon name="ionitron"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <ion-item>
+      <ion-label>First Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Last Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Date of Birth (mm/dd/yyyy)</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="MM DD YYYY"></ion-datetime>
+</ion-item>
+
+<ion-item>
+    <ion-label>Gender</ion-label>
+  <ion-select>
+    <ion-option value="f">Female</ion-option>
+    <ion-option value="m">Male</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+    <ion-label>Height (ft)</ion-label>
+    <ion-input type="number" min="3" max="8"></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label>Height (inches)</ion-label>
+    <ion-input type="number" min="0" max="11"></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label>Marital Status</ion-label>
+  <ion-select>
+    <ion-option value="single">Single</ion-option>
+    <ion-option value="married">Married</ion-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+    <ion-label># of Kids</ion-label>
+    <ion-input type="number" min="0" max="12"></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label>Zip Code</ion-label>
+    <ion-input type="number"></ion-input>
+</ion-item>
+
+<ion-item>
+  <button ion-button class="btn-save">Save</button>
+</ion-item>
+
+</ion-list>
+<br/><br/>
+<ion-item>
+  <button ion-button clear item-right>Sign Out</button>
+</ion-item>
+</ion-content>

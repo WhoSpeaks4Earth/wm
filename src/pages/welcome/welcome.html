@@ -2,11 +2,14 @@
   <div class="splash-bg"></div>
   <div class="splash-info">
     <div class="splash-logo"></div>
-    <div class="splash-intro">
-      {{ 'WELCOME_INTRO' }}
+    <div padding text-center class="splash-intro">
+      <ion-icon name="ionitron" color="primary" class="logo"></ion-icon>
     </div>
   </div>
+
   <div padding>
-    <button ion-button block (click)="signup()" class="signup">{{ 'SIGNUP' }}</button>
+
+    <page-signup></page-signup>
+
   </div>
 </ion-content>

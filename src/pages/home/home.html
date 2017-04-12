@@ -1,17 +1,118 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title text-center>
+      <ion-icon name="ionitron"></ion-icon>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+<!--
+  col-12 col-md-6 col-lg-4
+  col-6 col-sm-4 col-md-3
+-->
+<ion-grid>
+  <ion-row>
+    <ion-col col-12 col-md-6 col-lg-4>
+      <ion-card>
+        <img src="assets/img/well.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Diet<span style="float:right;">6</span>
+          </ion-card-title>
+
+
+            <button ion-button icon-only><ion-icon name="analytics"></ion-icon></button>
+            <button ion-button icon-only><ion-icon name="chatbubbles"></ion-icon></button>
+            <button ion-button icon-only><ion-icon name="clipboard"></ion-icon></button>
+            <button ion-button icon-only><ion-icon name="md-help-circle"></ion-icon></button>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-12 col-md-6 col-lg-4>
+      <ion-card>
+        <img src="assets/img/well.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Exercise
+            </ion-card-title>
+          <button ion-button icon-right> 
+            Begin Assessment
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-12 col-md-6 col-lg-4>
+      <ion-card>
+        <img src="assets/img/well.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Sleep
+          </ion-card-title>
+          <button ion-button icon-right> 
+            Begin Assessment
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-12 col-md-6 col-lg-4>
+      <ion-card>
+        <img src="assets/img/well.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Mindset
+            </ion-card-title>
+          <button ion-button icon-right> 
+            Begin Assessment
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-12 col-md-6 col-lg-4>
+      <ion-card>
+        <img src="assets/img/well.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Finance
+            </ion-card-title>
+          <button ion-button icon-right> 
+            Begin Assessment
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-12 col-md-6 col-lg-4>
+      <ion-card>
+        <img src="assets/img/well.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Toxins
+            </ion-card-title>
+          <button ion-button icon-right> 
+            Begin Assessment
+            <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+
+
+</ion-grid>
+
+
+
+  
 </ion-content>
