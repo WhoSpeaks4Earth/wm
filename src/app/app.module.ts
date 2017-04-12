@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { TutorialPage } from '../pages/tutorial/tutorial';
+import { WelcomePage } from '../pages/welcome/welcome';
+import { SignupPage } from '../pages/signup/signup';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -17,30 +20,45 @@ import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 const cloudSettings: CloudSettings = {
   'core': {
     'app_id': 'd5d66cb2'
+  },
+  'database': {
+    'authType': 'authenticated'
   }
 };
 
+/**
+ * The Pages array lists all of the pages we want to use in our app.
+ * We then take these pages and inject them into our NgModule so Angular
+ * can find them. As you add and remove pages, make sure to keep this list up to date.
+ */
+let pages = [
+  MyApp,
+  TutorialPage,
+  WelcomePage,
+  SignupPage,
+  TabsPage,
+  HomePage,
+  AboutPage,
+  ContactPage
+];
+
+export function declarations() {
+  return pages;
+}
+
+export function entryComponents() {
+  return pages;
+}
+
 @NgModule({
-  declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
+  declarations: declarations(),
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     CloudModule.forRoot(cloudSettings)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
+  entryComponents: entryComponents(),
   providers: [
     StatusBar,
     SplashScreen,
