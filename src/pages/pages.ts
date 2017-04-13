@@ -1,6 +1,6 @@
 import { TabsPage } from './tabs/tabs';
 import { WelcomePage } from './welcome/welcome';
-import { AboutPage } from './about/about';
+import { CirclesPage } from './circles/circles';
 import { ProfilePage } from './profile/profile';
 import { HomePage } from './home/home';
 
@@ -13,5 +13,5 @@ export const MainPage = TabsPage;
 
 // The initial root pages for our tabs (remove if not using tabs)
 export const Tab1Root = HomePage;
-export const Tab2Root = AboutPage;
+export const Tab2Root = CirclesPage;
 export const Tab3Root = ProfilePage;
