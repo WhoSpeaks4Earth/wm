@@ -11,6 +11,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ExerciseAssPage } from '../pages/exercise-ass/exercise-ass';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -39,6 +40,7 @@ let pages = [
   SignupPage,
   TabsPage,
   HomePage,
+  ExerciseAssPage,
   ProfilePage,
   CirclesPage,
   ContactPage

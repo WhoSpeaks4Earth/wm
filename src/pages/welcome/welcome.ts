@@ -11,7 +11,7 @@ import { MainPage } from '../pages';
 export class WelcomePage {
 
   constructor(public navCtrl: NavController) {
-    this.navCtrl.setRoot(MainPage);
+    //this.navCtrl.setRoot(MainPage);
   }
 
   // signup() {
