@@ -10,7 +10,6 @@ import { WelcomePage } from '../welcome/welcome';
 export class ProfilePage {
 
   constructor(public navCtrl: NavController) {
-
   }
 
   signOut() {
