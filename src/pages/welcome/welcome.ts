@@ -1,25 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-//import { SignupPage } from '../signup/signup';
-import { MainPage } from '../pages';
+import { Api } from '../../providers/api';
+
 
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html'
 })
-export class WelcomePage {
+export class WelcomePage implements OnInit {
 
-  constructor(public navCtrl: NavController) {
-    //this.navCtrl.setRoot(MainPage);
+  constructor(public navCtrl: NavController, public api: Api) {
+    
   }
 
-  // signup() {
-  //   this.navCtrl.push(SignupPage);
-  // }
-
-  // jumpTo() {
-  //   this.navCtrl.push(ProfilePage);
-  // }
+  ngOnInit() {
+    console.log('init for welcome page');
+    console.log(this.api.url);
+  }
 
 }
