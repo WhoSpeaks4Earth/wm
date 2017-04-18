@@ -13,6 +13,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { ProfilePage } from '../pages/profile/profile';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AssessmentsPage } from '../pages/assessments/assessments';
 import { ExerciseAssPage } from '../pages/exercise-ass/exercise-ass';
 
 import { Api } from '../providers/api';
@@ -45,6 +46,7 @@ let pages = [
   LoginPage,
   TabsPage,
   HomePage,
+  AssessmentsPage,
   ExerciseAssPage,
   ProfilePage,
   CirclesPage,

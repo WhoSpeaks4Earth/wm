@@ -16,12 +16,12 @@
 
   <ion-item>
       <ion-label>Last Name</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="text" [(ngModel)]="profile.lastName" name="lastName"></ion-input>
   </ion-item>
 
   <ion-item>
       <ion-label>Date of Birth (mm/dd/yyyy)</ion-label>
-  <ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="MM DD YYYY"></ion-datetime>
+  <ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="MM DD YYYY" [(ngModel)]="birthdate" name="birthdate"></ion-datetime>
 </ion-item>
 
 <ion-item>
