@@ -7,10 +7,11 @@
 </ion-header>
 
 <ion-content>
+  <form (submit)="saveProfile()">
   <ion-list>
   <ion-item>
       <ion-label>First Name</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="text" [(ngModel)]="profile.firstName" name="firstName"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -64,8 +65,10 @@
 </ion-item>
 
 </ion-list>
+  </form>
+
 <br/><br/>
 <ion-item>
-  <button ion-button clear item-right>Sign Out</button>
+  <button ion-button clear item-right (click)="signOut()">Sign Out</button>
 </ion-item>
 </ion-content>

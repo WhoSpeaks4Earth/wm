@@ -10,14 +10,18 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class LoginPage {
 
+    account: {email: string, password: string} = {
+        email: 'hi@ionic.io',
+        password: 'puppies123'
+    };
+
     constructor(public auth: Auth, public user: User, public navCtrl: NavController) {
-        console.log('auth deps injected');
     }
 
     doLogin(){
-        let details = {'email': 'hi@ionic.io', 'password': 'puppies123'};
+        //let details = {'email': 'hi@ionic.io', 'password': 'puppies123'};
 
-        this.auth.login('basic', details).then(() => {
+        this.auth.login('basic', this.account).then(() => {
             console.log('logged in');
             this.navCtrl.setRoot(TabsPage);
 
@@ -25,7 +29,5 @@ export class LoginPage {
             console.log(err);
         }
         )
-
-        
     }
 }
