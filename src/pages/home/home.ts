@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Auth } from '@ionic/cloud-angular';
 
-import { ProfilePage } from '../profile/profile';
-import { ExerciseAssPage } from '../exercise-ass/exercise-ass';
+import { RootIcon } from '../../components/root-icon/root-icon';
 
 @Component({
   selector: 'page-home',
@@ -23,7 +22,4 @@ export class HomePage implements OnInit {
     }
   }
 
-  goExerciseAss() {
-    this.navCtrl.push(ExerciseAssPage);
-  }
 }
