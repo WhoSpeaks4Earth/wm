@@ -21,30 +21,35 @@
 
   <ion-item>
       <ion-label>Date of Birth (mm/dd/yyyy)</ion-label>
-  <ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="MM DD YYYY" [(ngModel)]="birthdate" name="birthdate"></ion-datetime>
+  <ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="MM DD YYYY" [(ngModel)]="profile.birthdate" name="birthdate"></ion-datetime>
 </ion-item>
 
 <ion-item>
     <ion-label>Gender</ion-label>
-  <ion-select>
+  <ion-select [(ngModel)]="profile.gender" name="gender">
     <ion-option value="f">Female</ion-option>
     <ion-option value="m">Male</ion-option>
   </ion-select>
 </ion-item>
 
 <ion-item>
+    <ion-label>Weight (lbs)</ion-label>
+    <ion-input type="number" [(ngModel)]="profile.weight" name="weight" min="50" max="800"></ion-input>
+</ion-item>
+
+<ion-item>
     <ion-label>Height (ft)</ion-label>
-    <ion-input type="number" min="3" max="8"></ion-input>
+    <ion-input type="number" [(ngModel)]="profile.heightFeet" name="heightFeet" min="3" max="8"></ion-input>
 </ion-item>
 
 <ion-item>
     <ion-label>Height (inches)</ion-label>
-    <ion-input type="number" min="0" max="11"></ion-input>
+    <ion-input type="number" [(ngModel)]="profile.heightInches" name="heightInches" min="0" max="11"></ion-input>
 </ion-item>
 
 <ion-item>
     <ion-label>Marital Status</ion-label>
-  <ion-select>
+  <ion-select [(ngModel)]="profile.maritalStatus" name="maritalStatus">
     <ion-option value="single">Single</ion-option>
     <ion-option value="married">Married</ion-option>
   </ion-select>
@@ -52,12 +57,12 @@
 
 <ion-item>
     <ion-label># of Kids</ion-label>
-    <ion-input type="number" min="0" max="12"></ion-input>
+    <ion-input type="number" [(ngModel)]="profile.numKids" name="numKids" min="0" max="12"></ion-input>
 </ion-item>
 
 <ion-item>
     <ion-label>Zip Code</ion-label>
-    <ion-input type="number"></ion-input>
+    <ion-input type="number" [(ngModel)]="profile.zipcode" name="zipcode"></ion-input>
 </ion-item>
 
 <ion-item>
