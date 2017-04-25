@@ -20,6 +20,7 @@ export class ProfilePage {
     heightInches: number,
     maritalStatus: string,
     numKids: number,
+    email: string,
     zipcode: string } = {
       firstName: this.user.get('firstName', ''),
       lastName: this.user.get('lastName', ''),
@@ -30,6 +31,7 @@ export class ProfilePage {
       heightInches: this.user.get('heightInches', ''),
       maritalStatus: this.user.get('maritalStatus', ''),
       numKids: this.user.get('numKids', ''),
+      email: this.user.details.email,
       zipcode: this.user.get('zipcode', '')
   };
 
@@ -49,6 +51,7 @@ export class ProfilePage {
     this.user.set('heightInches', this.profile.heightInches);
     this.user.set('maritalStatus', this.profile.maritalStatus);
     this.user.set('numKids', this.profile.numKids);
+    this.user.details.email = this.profile.email;
     this.user.set('zipcode', this.profile.zipcode);
     this.user.save().then(() => {
       let toast = this.toastCtrl.create({
