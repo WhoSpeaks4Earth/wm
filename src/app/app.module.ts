@@ -6,8 +6,6 @@ import { MyApp } from './app.component';
 
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { SignupPage } from '../pages/signup/signup';
-import { LoginPage } from '../pages/login/login';
 import { CirclesPage } from '../pages/circles/circles';
 import { ContactPage } from '../pages/contact/contact';
 import { ProfilePage } from '../pages/profile/profile';
@@ -44,8 +42,6 @@ let pages = [
   MyApp,
   TutorialPage,
   WelcomePage,
-  SignupPage,
-  LoginPage,
   TabsPage,
   HomePage,
   RootIcon,

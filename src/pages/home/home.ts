@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Auth } from '@ionic/cloud-angular';
 
-import { RootIcon } from '../../components/root-icon/root-icon';
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'

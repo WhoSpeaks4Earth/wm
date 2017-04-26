@@ -9,9 +9,26 @@
 
   <div padding>
 
-    <page-signup></page-signup>
+    <form>
+    <ion-list>
 
-    <page-login></page-login>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+      </ion-item>
+
+      <div padding text-center>
+        <button (click)="doSignup()" ion-button color="primary" block>Register</button>
+        <button (click)="doLogin()" ion-button color="primary" block class="btn-login">Login</button>
+      </div>
+
+    </ion-list>
+  </form>
 
   </div>
 </ion-content>
