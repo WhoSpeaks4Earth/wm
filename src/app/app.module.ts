@@ -14,8 +14,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { AssessmentsPage } from '../pages/assessments/assessments';
 import { ExerciseAssPage } from '../pages/exercise-ass/exercise-ass';
 
-import { RootIcon } from '../components/root-icon/root-icon';
-
 import { Api } from '../providers/api';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -44,7 +42,6 @@ let pages = [
   WelcomePage,
   TabsPage,
   HomePage,
-  RootIcon,
   AssessmentsPage,
   ExerciseAssPage,
   ProfilePage,
